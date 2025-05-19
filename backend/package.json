@@ -1,0 +1,29 @@
+{
+  "name": "phone_directory_node",
+  "version": "1.0.0",
+  "description": "PHone directory project for vendors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "phone_directory"
+  },
+  "keywords": [
+    "phone",
+    "directory"
+  ],
+  "author": "Nitesh Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

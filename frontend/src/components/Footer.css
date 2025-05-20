@@ -136,17 +136,63 @@
   color: #90caf9;
 }
 
+/* Update mobile styles in Footer.css */
 @media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 0 0;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-section ul li {
+    text-align: center;
+  }
+
+  .contact-info p {
+    justify-content: center;
   }
 
   .footer-bottom-content {
     flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
     text-align: center;
   }
 
   .footer-bottom-links {
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-content {
+    gap: 1.5rem;
+  }
+
+  .social-links {
+    gap: 0.75rem;
   }
 }

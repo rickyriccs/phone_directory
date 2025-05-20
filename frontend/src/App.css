@@ -123,3 +123,31 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+
+/* Add these media queries at the end of App.css */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .vendor-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .vendor-card {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+}

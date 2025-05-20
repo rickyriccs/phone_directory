@@ -1,23 +1,56 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
+  const featuredVendors = [
+    { id: 1, name: 'Vendor 1', description: 'Quality products and services', image: 'vendor1.jpg' },
+    { id: 2, name: 'Vendor 2', description: 'Specialized solutions', image: 'vendor2.jpg' },
+    { id: 3, name: 'Vendor 3', description: 'Innovative offerings', image: 'vendor3.jpg' },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Navbar />
+      <header className="hero-section">
+        <h1>Welcome to Our Directory</h1>
+        <p>Your One-Stop Solution for Quality Services</p>
       </header>
+
+      <section className="featured-vendors">
+        <h2>Featured Vendors</h2>
+        <div className="vendor-grid">
+          {featuredVendors.map(vendor => (
+            <div key={vendor.id} className="vendor-card">
+              <img src={vendor.image} alt={vendor.name} className="vendor-image" />
+              <h3>{vendor.name}</h3>
+              <p>{vendor.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="company-info">
+        <h2>About Our Company</h2>
+        <div className="info-content">
+          <div className="mission">
+            <h3>Our Mission</h3>
+            <p>To connect businesses and customers through a comprehensive directory platform that promotes growth and success.</p>
+          </div>
+          <div className="values">
+            <h3>Our Values</h3>
+            <ul>
+              <li>Quality Service</li>
+              <li>Customer Satisfaction</li>
+              <li>Innovation</li>
+              <li>Integrity</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }

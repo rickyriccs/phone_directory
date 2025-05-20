@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <a href="/" className="logo">DigiRiccs</a>
+          <a href="/" className="logo">IM Pharmacist</a>
           <button className="hamburger" onClick={toggleMenu}>
             <span className={`bar ${isOpen ? 'active' : ''}`}></span>
             <span className={`bar ${isOpen ? 'active' : ''}`}></span>

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import SignIn from './pages/SignIn';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             </>
           } />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </div>

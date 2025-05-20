@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Banner />
       <header className="hero-section">
         <h1>Welcome to Our Directory</h1>
         <p>Your One-Stop Solution for Quality Services</p>
